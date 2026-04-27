@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.topo {
+  background-color: #f2f2f2;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 220px;
+}
+
+.logo {
+  width: 62px;
+}
+
+.banner {
+  background-color: #004db3;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  padding-left: 220px;
+  padding-right: 100px;
+  position: relative;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  max-width: 850px;
+  margin: 0;
+}
+
+.card-email {
+  position: absolute;
+  right: 280px;
+  top: 45px;
+  background-color: white;
+  padding: 35px 20px;
+  width: 300px;
+  min-height: 230px;
+  border-radius: 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  color: black;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.card-email h3 {
+  font-size: 20px;
+  margin: 0 0 25px 0;
+  line-height: 30px;
+}
+
+.card-email input {
+  width: 100%;
+  height: 34px;
+  padding-left: 10px;
+  border: 1px solid #6f89ad;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card-email button {
+  background-color: #0057d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.text h2 {
+  padding-left: 220px;
+  padding-top: 55px;
+  font-size: 40px;
+}
+
+.text p {
+  padding-left: 220px;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 810px;
+}
+
+.logo_mulher {
+  width: 450px;
+  border-radius: 10px;
+  margin-left: 220px;
+}
+
+.secao-inferior {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.lado-direito {
+  max-width: 500px;
+}
+
+.lado-direito h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.lado-direito ul {
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+.lado-direito p {
+  margin-top: 15px;
+}
+
+.botao-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0057d2;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.botao-flutuante svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .topo,
+  .banner,
+  .secao-inferior {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .text h2 {
+    font-size: 23px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .text p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 100%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: auto;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .banner h1 {
+    font-size: 26px;
+  }
+
+  .card-email { position: static; width: 100%; margin-top: 40px; box-shadow: none; padding: 0; }
+
+  .secao-inferior {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .logo_mulher {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .lado-direito {
+    max-width: 100%;
+  }
+
+  .botao-flutuante {
+    bottom: 16px;
+    right: 16px;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .botao-flutuante span {
+    display: none;
+  }
+}
