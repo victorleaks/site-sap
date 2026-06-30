@@ -9,56 +9,89 @@
 <body>
 
   <header class="topo">
-  <nav class="menu-principal">
-    <a href="#">
-      <img src="SAP.png" alt="SAP" class="logo">
+    <nav class="menu-principal">
+      <a href="#">
+        <img src="SAP.png" alt="SAP" class="logo">
       </a>
     </nav>
   </header>
 
   <main>
-  <section class="banner">
-    <h1>Revele o potencial dos seus negócios com a SAP</h1>
 
-    <section class="card-email desktop-only">
-      <h3>Forneça seu e-mail para começar</h3>
-      <input type="email" placeholder="E-mail corporativo *">
-      <button>Próximo</button>
+    <section class="banner">
+      <h1>Revele o potencial dos seus negócios com a SAP</h1>
+
+      <section class="card-email desktop-only">
+        <h3>Forneça seu e-mail para começar</h3>
+        <input type="email" placeholder="E-mail corporativo *">
+        <button>Próximo</button>
+      </section>
     </section>
-   </section>
 
-  <section class="text">
-    <h2>O seu negócio é o nosso negócio.</h2>
-    <p>
-      Como líder global em aplicações e IA empresariais, a SAP ajuda 
-      empresas de todos os portes e setores a atingirem o seu máximo 
-      desempenho. A seguir, mostramos como você pode otimizar suas 
-      operações, tomar decisões mais inteligentes e alcançar seus 
-      objetivos.
-    </p>
-  </section>
-
-   <section class="secao-inferior">
-
-  <img src="mulher_sap.jfif" alt="mulher_sap" class="logo_mulher">
-
-  <section class="lado-direito">
-    <h3>Cadastre-se hoje para:</h3>
-    <ul>
-      <li>Descobrir como a SAP pode apoiar o seu negócio</li>
-      <li>Solicitar uma demonstração do produto</li>
-      <li>Ver uma apresentação do produto</li>
-      <li>Ficar por dentro dos próximos eventos</li>
-    </ul>
-    <p>Pronto para começar?</p>
-
-    <section class="card-email mobile-only">
-      <h3>Forneça seu e-mail para começar</h3>
-      <input type="email" placeholder="E-mail corporativo *">
-      <button>Próximo</button>
+    <section class="text">
+      <h2>O seu negócio é o nosso negócio.</h2>
+      <p>
+        Como líder global em aplicações e IA empresariais, a SAP ajuda 
+        empresas de todos os portes e setores a atingirem o seu máximo 
+        desempenho. A seguir, mostramos como você pode otimizar suas 
+        operações, tomar decisões mais inteligentes e alcançar seus 
+        objetivos.
+      </p>
     </section>
-  </section>
-  </section>
+
+    <section class="secao-inferior">
+
+      <img src="mulher_sap.jfif" alt="mulher_sap" class="logo_mulher">
+
+      <section class="lado-direito">
+        <h3>Cadastre-se hoje para:</h3>
+        <ul>
+          <li>Descobrir como a SAP pode apoiar o seu negócio</li>
+          <li>Solicitar uma demonstração do produto</li>
+          <li>Ver uma apresentação do produto</li>
+          <li>Ficar por dentro dos próximos eventos</li>
+        </ul>
+
+        <p>Pronto para começar?</p>
+
+        <section class="card-email mobile-only">
+          <h3>Forneça seu e-mail para começar</h3>
+          <input type="email" placeholder="E-mail corporativo *">
+          <button>Próximo</button>
+        </section>
+      </section>
+
+    </section>
+
+    <section class="secao-api">
+      <h2>Buscar conteúdos</h2>
+
+      <p>
+        Pesquise conteúdos relacionados a negócios, tecnologia ou gestão.
+        Os dados são carregados de uma API JSON aberta.
+      </p>
+
+      <div class="area-busca">
+        <input 
+          type="text" 
+          id="campoBusca" 
+          placeholder="Digite no mínimo 3 caracteres"
+        >
+
+        <button id="btnBuscar">
+          Buscar
+        </button>
+      </div>
+
+      <p id="mensagemValidacao" class="mensagem-validacao"></p>
+
+      <div id="resultadoBusca" class="resultado-busca"></div>
+
+      <h2 class="titulo-favoritos">Favoritos</h2>
+
+      <div id="listaFavoritos" class="resultado-busca"></div>
+    </section>
+
   </main>
 
   <button class="botao-flutuante">
@@ -68,6 +101,8 @@
     </svg>
     <span>Fale conosco</span>
   </button>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
