@@ -163,6 +163,115 @@ body {
   text-decoration: none;
 }
 
+/* ========================= */
+/* ÁREA DA API               */
+/* ========================= */
+
+.secao-api {
+  margin: 60px 220px 30px 220px;
+  padding: 35px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+
+.secao-api h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.secao-api p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.area-busca {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.area-busca input {
+  width: 100%;
+  max-width: 420px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #6f89ad;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.area-busca button {
+  background-color: #0057d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.area-busca button:hover,
+.card-resultado button:hover,
+.card-email button:hover,
+.botao-flutuante:hover {
+  opacity: 0.9;
+}
+
+.mensagem-validacao {
+  color: #b00020;
+  font-weight: bold;
+  min-height: 24px;
+}
+
+.resultado-busca {
+  margin-top: 20px;
+  display: grid;
+  gap: 18px;
+}
+
+.card-resultado {
+  background-color: white;
+  padding: 20px;
+  border-left: 5px solid #0057d2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-resultado h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #111;
+}
+
+.card-resultado p {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.card-resultado button {
+  background-color: #0057d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card-resultado button.remover {
+  background-color: #444;
+}
+
+.titulo-favoritos {
+  margin-top: 45px;
+}
+
+/* ========================= */
+/* RESPONSIVO                */
+/* ========================= */
+
 @media (max-width: 768px) {
   .desktop-only {
     display: none;
@@ -205,7 +314,13 @@ body {
     font-size: 26px;
   }
 
-  .card-email { position: static; width: 100%; margin-top: 40px; box-shadow: none; padding: 0; }
+  .card-email {
+    position: static;
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: none;
+    padding: 0;
+  }
 
   .secao-inferior {
     flex-direction: column;
@@ -219,6 +334,32 @@ body {
 
   .lado-direito {
     max-width: 100%;
+  }
+
+  .secao-api {
+    margin: 40px 20px;
+    padding: 25px 20px;
+  }
+
+  .secao-api h2 {
+    font-size: 24px;
+  }
+
+  .secao-api p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .area-busca {
+    flex-direction: column;
+  }
+
+  .area-busca input {
+    max-width: 100%;
+  }
+
+  .area-busca button {
+    height: 40px;
   }
 
   .botao-flutuante {
